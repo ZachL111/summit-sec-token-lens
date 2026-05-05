@@ -1,0 +1,10 @@
+{
+  "name": "zachl111/summit-sec-token-lens",
+  "description": "Implement a PHP security tooling project for token diagnostic reporting, using negative fixtures and human-readable error snapshots.",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Portfolio\\": "src/"
+    }
+  }
+}
