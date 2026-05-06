@@ -1,0 +1,73 @@
+{
+  "repo": "summit-sec-token-lens",
+  "language": "PHP",
+  "category": "Security tooling",
+  "goal": "Implement a PHP security tooling project for token diagnostic reporting, using negative fixtures and human-readable error snapshots.",
+  "review_model": {
+    "terms": [
+      "trust boundary",
+      "claim drift",
+      "replay exposure",
+      "policy width"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "trust boundary",
+      "signal": 63,
+      "slack": 46,
+      "drag": 25,
+      "confidence": 93,
+      "score": 190,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "claim drift",
+      "signal": 61,
+      "slack": 39,
+      "drag": 29,
+      "confidence": 57,
+      "score": 131,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "replay exposure",
+      "signal": 48,
+      "slack": 45,
+      "drag": 23,
+      "confidence": 85,
+      "score": 157,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "policy width",
+      "signal": 85,
+      "slack": 28,
+      "drag": 31,
+      "confidence": 80,
+      "score": 185,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "trust boundary",
+      "signal": 56,
+      "slack": 48,
+      "drag": 27,
+      "confidence": 91,
+      "score": 170,
+      "lane": "ship"
+    }
+  ]
+}
