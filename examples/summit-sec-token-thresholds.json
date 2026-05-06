@@ -1,0 +1,17 @@
+{
+  "repo": "summit-sec-token-lens",
+  "thresholds": {
+    "signal": 3,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 3,
+    "ship": 202,
+    "watch": 124
+  },
+  "terms": [
+    "trust boundary",
+    "claim drift",
+    "replay exposure",
+    "policy width"
+  ]
+}
